@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Messenger</string>
+    <string name="et_hint">Введите текст</string>
+    <string name="Send">Отправить</string>
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+
+
+    <RelativeLayout
+        android:layout_weight="9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edit_text"
+            android:hint="@string/et_hint"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:inputType="textCapSentences"/>
+        <Button
+            android:id="@+id/button_send"
+            android:text="@string/Send"
+            android:layout_width="wrap_content"                      android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/edit_text"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@id/edit_text"
+            android:onClick="onClick"/>
+    </RelativeLayout>
+
+</LinearLayout>
